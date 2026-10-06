@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandi Textiles | The Embroidery Thread Theory Studio</title>
+  <style>
+    /* Point 4: Bright Color Theme */
+    :root {
+      --primary-blue: #0d47a1;
+      --gold-accent: #ffb300;
+      --whatsapp-green: #25d366;
+      --dark-bg: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #ffffff;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-blue), #002171);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid var(--gold-accent);
+    }
+
+    h1 {
+      color: var(--gold-accent);
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: #e0e0e0;
+      margin-top: 5px;
+    }
+
+    .container {
+      padding: 15px;
+    }
+
+    /* Point 1: Auto-Scroll Slider / Carousel */
+    .slider-container {
+      overflow: hidden;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      margin-bottom: 25px;
+    }
+
+    .slider-track {
+      display: flex;
+      width: 300%;
+      animation: autoScroll 12s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slide-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.7);
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 13px;
+      color: var(--gold-accent);
+    }
+
+    @keyframes autoScroll {
+      0% { transform: translateX(0); }
+      30% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      63% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      96% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* Point 2: Animated Real-time Counter */
+    .stats-section {
+      display: flex;
+      justify-content: space-around;
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      border: 1px solid #333;
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 26px;
+      font-weight: bold;
+      color: var(--gold-accent);
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    /* Products Section */
+    .section-title {
+      font-size: 18px;
+      border-left: 4px solid var(--gold-accent);
+      padding-left: 8px;
+      margin-bottom: 15px;
+      color: var(--gold-accent);
+    }
+
+    .product-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .price {
+      font-size: 18px;
+      color: var(--gold-accent);
+      font-weight: bold;
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background-color: var(--whatsapp-green);
+      color: #fff;
+      padding: 10px 0;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Point 3: Customer Reviews with Star Ratings */
+    .reviews-section {
+      margin-top: 25px;
+    }
+
+    .review-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--primary-blue);
+      padding: 12px 15px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .stars {
+      color: var(--gold-accent);
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .reviewer-name {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 5px;
+      text-align: right;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #777;
+      background: #0a0a0a;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chandi Textiles</h1>
+    <p class="subtitle">The Embroidery Thread Theory Studio</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Point 1: Auto Gallery Slider -->
+    <div class="slider-container">
+      <div class="slider-track">
+        <div class="slide">
+          <img src="https://via.placeholder.com/600x300/0d47a1/ffffff?text=Custom+Name+Embroidery" alt="Custom Name Embroidery">
+          <div class="slide-text">High-Precision Stitching</div>
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/600x300/ffb300/000000?text=Custom+Logo+T-Shirts" alt="Custom Logo T-Shirts">
+          <div class="slide-text">220 GSM Premium Cotton</div>
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/600x300/25d366/ffffff?text=Bulk+%26+Single+Orders" alt="Bulk & Single Orders">
+          <div class="slide-text">Pan-India Delivery</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Point 2: Animated Counter Section -->
+    <div class="stats-section">
+      <div class="stat-box">
+        <div class="stat-number" id="counter1">0</div>
+        <div class="stat-label">ऑर्डर्स पूर्ण</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" id="counter2">0</div>
+        <div class="stat-label">आनंदी ग्राहक</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">क्वालिटी थ्रेड्स</div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="section-title">Featured Embroidery Services</div>
+
+    <div class="product-card">
+      <h3>Custom Name T-Shirt</h3>
+      <p>Premium 220 GSM 100% Cotton with High-Precision Name Embroidery.</p>
+      <div class="price">₹699</div>
+      <a href="https://wa.me/919067581734?text=Hi%20Chandi%20Textiles,%20I%20want%20to%20order%20Custom%20Name%20T-Shirt" class="btn-whatsapp">Order via WhatsApp</a>
+    </div>
+
+    <div class="product-card">
+      <h3>Custom Logo Embroidery</h3>
+      <p>High-Density Stitching for Brands, Businesses & Single Orders.</p>
+      <div class="price">₹499</div>
+      <a href="https://wa.me/919067581734?text=Hi%20Chandi%20Textiles,%20I%20want%20to%20order%20Custom%20Logo%20Embroidery" class="btn-whatsapp">Order via WhatsApp</a>
+    </div>
+
+    <!-- Point 3: Customer Reviews (Testimonials) -->
+    <div class="reviews-section">
+      <div class="section-title">Customer Reviews</div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div>"टी-शर्टची क्वालिटी आणि एम्ब्रॉयडरीचे फिनिशिंग खूप भारी आहे! थ्रेड क्वालिटी नंबर १ आहे."</div>
+        <div class="reviewer-name">- राहुल एम. (पुणे)</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div>"कस्टम लोगो एकदम परफेक्ट स्टिच करून दिला. डिलिव्हरी सुद्धा वेळेवर मिळाली."</div>
+        <div class="reviewer-name">- अमित के. (मुंबई)</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Chandi Textiles | The Embroidery Thread Theory Studio</p>
+    <p>Instagram: @The_Embroidery_Thread_Theory_studio | YouTube: @Dagedore</p>
+    <p>Contact: +91 9067581734 | chanditextile.official@gmail.com</p>
+  </footer>
+
+  <!-- Script for Counter Animation -->
+  <script>
+    function animateCounter(id, target) {
+      let current = 0;
+      let increment = Math.ceil(target / 50);
+      let element = document.getElementById(id);
+      let timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.innerText = target + "+";
+          clearInterval(timer);
+        } else {
+          element.innerText = current;
+        }
+      }, 30);
+    }
+
+    window.onload = function() {
+      animateCounter("counter1", 500); // 500+ Orders
+      animateCounter("counter2", 300); // 300+ Happy Customers
+    };
+  </script>
+
+</body>
+</html>
